@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id ="root"></div>
+</body>
+<script>
+  let girlfriends = ["김연경","김혜수","배두나"];
+
+  let Boyfriends = ["이도현","임시완","박보검"];
+
+  let mylover = girlfriends +','+Boyfriends;
+  
+  for (i = 0; i<girlfriends.length; i++){
+    for(j = 0; j<Boyfriends.length; j++){
+      if(i + j === 2) {document.write(girlfriends[i]+Boyfriends[i])}
+    } 
+  }
+  </script>
+  <h1>랜덤뽑기연습</h1>
+  <script>
+  const randomgirl = girlfriends[Math.floor(Math.random() * girlfriends.length)];
+
+  document.write(randomgirl);
+
+
+</script>
+</html>
