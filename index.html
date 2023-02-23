@@ -22,15 +22,18 @@
   <script>
     let menu = document.getElementById('menu');
 
-    for(i=0; i<10; i++){
-    menu.style.color = 'powderblue';}
+    for(i=0; i<menu.children.length; i++){ //배열이기 때문에 children넣어주삼
 
-    console.log(menu.children);
-    console.log(menu.children[0]);
+//여기까지 검증완료
 
-  
+  if(menu.children[i].textContent === "item-3") //비교연산자
+  {menu.children[i].style.color ="red";
+  }
+  else{
+    menu.children[i].style.color ="green";
+  } 
+} //배열은 순서기때문에 반복문과 잘 어울린다 반복문과 if 문과 궁합이 좋다!
 
-    
   </script>
 </body>
 </html>
