@@ -7,8 +7,7 @@
   <title>Document</title>
 </head>
 <body>
-  <div id ="root"></div>
-</body>
+<h1>배열에서 가져오기</h1>
 <script>
   let Girlfriends = ["김연경","김혜수","배두나"];
 
@@ -19,16 +18,39 @@
   for (i = 0; i<Girlfriends.length; i++){
     for(j = 0; j<Boyfriends.length; j++){
       if(i + j === 2) {document.write(Girlfriends[i]+','+Boyfriends[i]+'</br>')}
-    } 
+    } //1+j가 두개일때 출력해준다. 걸프랜드[0]+보이프랜드[0],[1]+[1],[2]+[2] 이렇게 작동.
   }
   </script>
   <h1>랜덤뽑기연습</h1>
+  <h2>Math.random()</h2>
   <script>
-  const randomGirl = Girlfriends[Math.floor(Math.random() * Girlfriends.length)];
-  const randomBoy = Boyfriends[Math.floor(Math.random() * Boyfriends.length)];
-  
+  let randomGirl = Girlfriends[Math.floor(Math.random() * Girlfriends.length)];
+  let randomBoy = Boyfriends[Math.floor(Math.random() * Boyfriends.length)];
+   //걸프랜드 배열에서 랜덤으로 추출하기위해서 math.random은 0~1의 숫자를 반환하니까 걸프랜드의 길이값을 곱해주고 그 값을 math.floor로 정수로 만들어주면 랜덤의 숫자가 나온다 그러니까 girlfriends[랜덤값] 
   document.write(randomGirl);
   document.write(randomBoy);
-
 </script>
+<h1>Math.random()숫자</h1>
+<script>
+var a =Math.floor(Math.random());
+// 0부터 0.999... 사이의 값을 반환한다.
+// 소수점 처리를 하면 항상 0이 출력된다.
+
+var b =Math.floor(Math.random() * 10);
+// > 0부터 9.999... 사이의 값을 반환한다.
+// > 소수점 처리를 하면 0~9사이의 값이 출력된다.
+
+var c = Math.floor(Math.random() * 10) + 1;
+// > 0부터 9.999... 사이의 값을 반환한다.
+// > 소수점 처리를 하고 1을 더하면 1~10사이의 값이 출력된다.
+document.write(a+'<br>');
+document.write(b+'<br>');
+document.write(c);
+</script>
+<h1>랜덤추출을 이용해서 배열에서 랜덤뽑기</h1>
+
+
+
+
+</body>
 </html>
