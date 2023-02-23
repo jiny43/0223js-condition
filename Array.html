@@ -12,8 +12,6 @@
   let Girlfriends = ["김연경","김혜수","배두나"];
 
   let Boyfriends = ["이도현","임시완","박보검"];
-
-  let mylover = Girlfriends +','+Boyfriends;
   
   for (i = 0; i<Girlfriends.length; i++){
     for(j = 0; j<Boyfriends.length; j++){
@@ -26,7 +24,7 @@
   <script>
   let randomGirl = Girlfriends[Math.floor(Math.random() * Girlfriends.length)];
   let randomBoy = Boyfriends[Math.floor(Math.random() * Boyfriends.length)];
-   //걸프랜드 배열에서 랜덤으로 추출하기위해서 math.random은 0~1의 숫자를 반환하니까 걸프랜드의 길이값을 곱해주고 그 값을 math.floor로 정수로 만들어주면 랜덤의 숫자가 나온다 그러니까 girlfriends[랜덤값] 
+   //걸프랜드 배열에서 랜덤으로 추출하기위해서 math.random은 0~1의 숫자를 반환하니까 걸프랜드의 길이값을 곱해주고 그 값을 math.floor로 정수로 만들어주면 랜덤의 숫자가 나온다.그러니까 girlfriends[랜덤값] 
   document.write(randomGirl);
   document.write(randomBoy);
 </script>
@@ -35,11 +33,9 @@
 var a =Math.floor(Math.random());
 // 0부터 0.999... 사이의 값을 반환한다.
 // 소수점 처리를 하면 항상 0이 출력된다.
-
 var b =Math.floor(Math.random() * 10);
 // > 0부터 9.999... 사이의 값을 반환한다.
 // > 소수점 처리를 하면 0~9사이의 값이 출력된다.
-
 var c = Math.floor(Math.random() * 10) + 1;
 // > 0부터 9.999... 사이의 값을 반환한다.
 // > 소수점 처리를 하고 1을 더하면 1~10사이의 값이 출력된다.
@@ -47,7 +43,23 @@ document.write(a+'<br>');
 document.write(b+'<br>');
 document.write(c);
 </script>
-<h1>랜덤추출을 이용해서 배열에서 랜덤뽑기</h1>
+<h1>function사용해서 만들기</h1>
+<script>
+let mylover = {
+    myGril : ["RubyRose","CateBlanchet","NatashaLyonne"],
+    myBoy : ["TimothéeChalamet","JamesMcAvoy","nell"]
+  }
+function setRandom(){
+  mylover.myGril[Math.floor(Math.random() * Gmylover.myGril.length)];
+} // *******이 부분 해결 못 함 *******
+
+
+document.write(mylover+'<br>');//결과가 궁금했는데 [object Object]이라고 뜬다
+document.write(mylover.myGril[0]+','+mylover.myBoy[2]);
+console.log(randomlover);
+console.log(setRandom());
+</script>
+
 
 
 
