@@ -10,24 +10,25 @@
   <div id ="root"></div>
 </body>
 <script>
-  let girlfriends = ["김연경","김혜수","배두나"];
+  let Girlfriends = ["김연경","김혜수","배두나"];
 
   let Boyfriends = ["이도현","임시완","박보검"];
 
-  let mylover = girlfriends +','+Boyfriends;
+  let mylover = Girlfriends +','+Boyfriends;
   
-  for (i = 0; i<girlfriends.length; i++){
+  for (i = 0; i<Girlfriends.length; i++){
     for(j = 0; j<Boyfriends.length; j++){
-      if(i + j === 2) {document.write(girlfriends[i]+Boyfriends[i])}
+      if(i + j === 2) {document.write(Girlfriends[i]+','+Boyfriends[i]+'</br>')}
     } 
   }
   </script>
   <h1>랜덤뽑기연습</h1>
   <script>
-  const randomgirl = girlfriends[Math.floor(Math.random() * girlfriends.length)];
-
-  document.write(randomgirl);
-
+  const randomGirl = Girlfriends[Math.floor(Math.random() * Girlfriends.length)];
+  const randomBoy = Boyfriends[Math.floor(Math.random() * Boyfriends.length)];
+  
+  document.write(randomGirl);
+  document.write(randomBoy);
 
 </script>
 </html>
