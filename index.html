@@ -26,11 +26,11 @@
 
 //여기까지 검증완료
 
-  if(menu.children[i].textContent === "item-3") //비교연산자
-  {menu.children[i].style.color ="red";
+  if(i===2) //비교연산자 , "판단 주체"가 엄청 중요함!! 
+  {menu.children[i].style.color ="blue"; 
   }
   else{
-    menu.children[i].style.color ="green";
+    menu.children[i].style.backgroundColor = "gray"; //대소문자 잘 구분하자!
   } 
 } //배열은 순서기때문에 반복문과 잘 어울린다 반복문과 if 문과 궁합이 좋다!
 
